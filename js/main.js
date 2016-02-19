@@ -25,11 +25,14 @@ var commonWords = [
   "who","oil","its","now","find","long","down","day","did","get",
   "come","made","may","part"
 ];
-//choose random word
-var randnum = Math.floor((Math.random() * 100) + 1)
-currentword=commonWords[randnum];
-//determine it's length
-currentwordlength=currentword.length;
+while(currentwordlength<3){
+  //choose random word
+  var randnum = Math.floor((Math.random() * 100) + 1)
+  currentword=commonWords[randnum];
+  //determine it's length
+  currentwordlength=currentword.length;
+}
+
 //build inital word with all blanks
 for(var i = 0;i<currentwordlength;i++){
   guessedword[i]=" _ ";
