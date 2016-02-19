@@ -1,0 +1,73 @@
+body{
+  background-color: gray;
+}
+#word{
+  width:100%;
+  height:60px;
+  margin-top: -30px;
+}
+#word p{
+  text-align: center;
+  font-size:55px;
+}
+
+#title{
+text-align: center;
+font-size: 60px;
+margin-top: -10px;
+}
+#hangmanimage{
+  width:40%;
+  height:400px;
+  background-color: red;
+float:right;
+margin-right: 10%;
+margin-top: -400px;
+}
+#hangmanimage p{
+  color:white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+#imagecontainer{
+  width: 100px;
+  height: 300px;
+  margin: 0 auto;
+}
+#image{
+  width:200px;
+  height:300px;
+  margin-left: -60px;
+}
+
+#lettercontainer{
+  width:40%;
+  height:400px;
+  background-color: red;
+  top:-30px;
+  margin-left: 5%;
+}
+#lettercontainer h4{
+  color:white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.letter{
+  background-color: white;
+  display: inline-block;
+  border:black solid 1px;
+  font-size:60px;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.grayit{
+  background-color:gray;
+  display: inline-block;
+  border:black solid 1px;
+  font-size:60px;
+  margin-left: 10px;
+  margin-top: -20px;
+}
