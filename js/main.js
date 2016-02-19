@@ -6,6 +6,8 @@ var currentword;
 var currentwordlength=0;
 var guessedword=[];
 var wordarray = [];
+var yell = new Audio('images/yell.mp3');
+var cheer = new Audio('images/cheer.mp3');
 
 // letters.addEventListener('click', function (event) {
 //   var target = event.target || event.srcElement;
@@ -59,6 +61,7 @@ document.addEventListener('click', function(e) {
 wordarray.forEach(function(value, index,array){
 if(value==currentid){
 guessedword[index] = currentid;
+cheer.play();
   document.getElementById('word').innerHTML="<p>" + guessedword + "</p>";
   missed=false;
 }
@@ -67,7 +70,6 @@ guessedword[index] = currentid;
 var youwin=true;
 guessedword.forEach(function(value, index,array){
   if(array[index]==" _ "){
-    console.log("itworks")
     youwin=false
   }
 })
@@ -86,6 +88,7 @@ if(missed==true){
       document.getElementById('image').src = ("src","images/hman" + missindex + ".gif")
   document.getElementById('Misses').innerHTML="Misses left: " + misses;
   document.getElementById('Misses')
+  yell.play();
   if(misses==0){
     var div = document.getElementById('lettercontainer');
   while(div.firstChild){
